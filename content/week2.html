@@ -154,11 +154,26 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='week.html'>Next</a> >> week<br /><h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<br />About << <a href='About.html'>Previous</a> <a href='week.html'>Next</a> >> week</div>
+    <div id="tipue_search_content">week1 << <a href='week1.html'>Previous</a> <a href='week3.html'>Next</a> >> week3<br /><h1>week2</h1>
+<p>個人倉儲流程:</p>
+<p>1:先建立一個cd2020的倉儲</p>
+<p><img alt="" height="375" src="./../images/1.png" width="467"/></p>
+<p>2:git clone <a href="https://github.com/s40723132/cd2020.git">https://github.com/s40723132/cd2020.git</a></p>
+<p><img alt="" height="286" src="./../images/2.png" width="549"/></p>
+<p>3:cd cd2020-&gt;cd cmsimde-&gt;輸入git submodule init(返回初始狀態)</p>
+<p>-&gt;git submodule update(更新到倉儲目前的模組塊)，回到cmsimde內就會有檔案了。</p>
+<p><img alt="" height="310" src="./../images/3.png" width="487"/></p>
+<p>4:輸入python wsgi.py就可以直接進到近端進行編輯</p>
+<p>5:要推到遠端的話，需在Y:tmp:cd2020下進行git add . -&gt;git commit -m " " -&gt;git push</p>
+<p>6:git push完後需在倉儲中的setting將github pages裡面分支切換為master branch 才會讀取到內容</p>
+<p><img alt="" height="356" src="./../images/4.png" width="554"/></p>
+<p>7:在個人倉儲的commit(提交) 需要有打勾才代表網頁有完成</p>
+<p><img alt="" height="205" src="./../images/5.png" width="493"/></p>
+<p></p>
+<p></p>
+<p> </p>
+<p></p>
+<br />week1 << <a href='week1.html'>Previous</a> <a href='week3.html'>Next</a> >> week3</div>
         
     <!-- footer -->
       <div class="container">
