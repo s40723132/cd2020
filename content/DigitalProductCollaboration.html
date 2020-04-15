@@ -1,0 +1,239 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>s40723132 cd2020 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">s40723132 cd2020 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='相關連結.html'>相關連結</a><li><a href='About.html'>About</a><li class='has-children'><a href='week.html'>week</a><ul class='dropdown'><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='week4.html'>week4</a><li class='has-children'><a href='week5.html'>week5</a><ul class='dropdown'><li><a href='場景&模型&環境.html'>場景&模型&環境</a><li><a href='Calculation modules.html'>Calculation modules</a><li><a href='編寫代碼.html'>編寫代碼</a></li></ul><li><a href='week6.html'>week6</a><li><a href='week7.html'>week7</a></li></ul><li class='has-children'><a href='電子書翻譯.html'>電子書翻譯</a><ul class='dropdown'><li><a href='DigitalProductCollaboration.html'>DigitalProductCollaboration</a><li><a href='IndustrialAndEngineeringProductDesignCollaboration.html'>IndustrialAndEngineeringProductDesignCollaboration</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">電子書翻譯 << <a href='電子書翻譯.html'>Previous</a> <a href='IndustrialAndEngineeringProductDesignCollaboration.html'>Next</a> >> IndustrialAndEngineeringProductDesignCollaboration<br /><h1>DigitalProductCollaboration</h1>
+<p>Digital products are more complex today than ever before. Creating them requires multiple team members, each with their own set of skills and expertise. At Savvy, for example, our customers work closely with: a product manager, UX designer, visual designer, developer(s), content strategist, and a growth specialist.<br/>數位產品比以往更加複雜。創建它們需要多個團隊成員，每個成員都有自己的一套技能和專業知識。例如，在Savvy，我們的客戶與以下人員緊密合作：產品經理，UX設計人員，視覺設計師，開發人員，內容戰略家和成長專家。</p>
+<p>We use design collaboration to handle this complexity.Done right, designcollaboration empowerseach of those experts with the mindset, process, and tools to come together and build a betterproduct faster.<br/>我們使用設計協同來處理這種複雜性。正確地完成，設計協同可幫助每個專家都有共同的心態，流程和工具，共同建立更好的<br/>產品。</p>
+<p>We wrote this resource to help other app creators adopt a collaboration culture and process. Read on to learn why design collaboration is important for creating compelling products and experiences. We'll also dive into the elements of a design collaboration mindset and culture, tools for effective design collaboration, and a real-world example of design collaboration at work.<br/>我們編寫了此資源，以幫助其他應用程序創建者採用協同文化和流程。繼續學習為什麼設計協同對於創造引人注目的產品很重要，以及經驗。我們還將深入探討設計協作心態和文化，工具的要素進行有效的設計協作，以及實際工作中的設計協作示例。</p>
+<p>What is "Design" Collaboration?<br/>什麼是"設計"協同？</p>
+<p>Before we jump into it, we need to get on the same page about what design collaboration is... and is not. At its simplest, design collaboration is collaboration in a design-first environment. But, because of the nature of design, especially the design we do at Savvy, design collaboration tends to go beyond what people normally think of as collaboration.<br/>在進入之前，我們需要在同一頁面上了解什麼是設計協同簡單來說，設計協作就是在設計優先的環境中進行協作。由於設計的本質，特別是我們在Savvy所做的設計，設計協作趨向於超越人們通常認為的協作</p>
+<p>While collaboration is generally defined as two or more people working together on the same task towards a common goal, design collaboration involves much more.<br/>通常將協作定義為兩個或兩個以上的人共同完成一項任務，為了實現共同的目標。</p>
+<p>Design collaboration includes more people with different skillsets, tougher challenges, and bigger goals with farther-reaching impacts.<br/>設計協同具有不同技能，艱鉅挑戰和更大規模的人員，具有深遠影響的目標。</p>
+<p>You might think of collaboration as two people hanging a piece of art. It simply requires communication, teamwork, and four hands. Design collaboration is when a team of curators carefully design a visitor's experience. They select the art, choose where and how to hang it, which room it lives in (and the room's lighting, furniture), even the preceding rooms and the building as a whole.<br/>您可能將協作視為兩個人掛在一塊藝術品上。它只需要溝通，團隊合作和四隻手。設計協作是指一組策展人精心設計訪問者的考驗。他們選擇藝術品，選擇在何處以及如何懸掛藝術品，它所居住的房間（以及房間的照明，家具），甚至前面的房間和建築物整個。</p>
+<p>Why Design Collaboration is Important?<br/>為什麼設計協作很重要?</p>
+<p>You can design a product without collaboration, but it takes a collaborative design process to make that product great. That's why design collaboration is so fundamental.</p>
+<p>您可以在沒有協作的情況下設計產品，但是需要一個協作設計過程才能使這個產品很棒。這就是設計協作如此重要的原因。</p>
+<p>We don't just build apps for our customers. Savvy builds multi-platform experiences, complex internal systems, and in some cases, entire brands and businesses. To do so, we leverage expertise across several core disciplines: strategy, design, development, and growth. Each project involves many people, each with their own skillsets and specialties.<br/>我們不僅為客戶構建應用程序。精明構建複雜的多平台體驗內部系統，在某些情況下還包括整個品牌和業務。為此，我們利用專業知識跨多個核心學科：戰略，設計，開發和增長。每個項目都涉及許多人都有各自的技能和專長。</p>
+<p>Design collaboration puts those minds together, combining their separate, specialized expertise to create solutions that tackle all aspects of a shared goal. Instead of coming at a problem from one angle, design collaboration places that problem in front of all experts, forcing them to consider new perspectives and possibilities.<br/>設計協作將這些思想融合在一起，將他們各自的專業知識結合在一起創建解決方案，以解決共同目標的所有方面。而不是一個人遇到問題角度來看，設計協作將這個問題擺在所有專家面前，迫使他們考慮新觀點和可能性。</p>
+<p>For example, we involve our developers early on in the design process to make sure we're accounting for technical opportunities and limitations as soon as possible. This allows us to take advantage of and push our technical capabilities while eliminating costly roadblocks further in the process. It also limits how much a single person can work in a silo, keeping the work in the open and the emphasis on the user needs and product goals.<br/>例如，我們起初設計過程的時候就讓我們的開發人員參與進來，以確保我們盡快解決技術機會和局限性。這使我們可以優勢並推動我們的技術能力，同時進一步消除了昂貴的障礙處理。它還限制了一個人可以在筒倉中工作的數量，從而使工作保持公開狀態並強調用戶需求和產品目標。</p>
+<h4>page2</h4>
+<p>The right mindset goes a long way in establishing effective collaboration in the design process. It lays the guidelines for who collaborates, how, and to what end.<br/>在設計過程中建立有效的協作時，正確的思維方式大有幫助。 它規定了誰進行協作，如何進行以及達到何種目的的準則。</p>
+<p>Designers sometimes think that people who are not designers are not qualified to give good feedback. But great design is more than visuals. It encompasses everything about a product, from its branding to its engineering to its growth.<br/>設計師有時會認為不是設計師沒有資格提供良好的產品反饋。 但是出色的設計不只是視覺效果。 它涵蓋了有關產品的所有內容，從它的品牌，工程技術及其成長。</p>
+<p>Design collaboration brings in many people, each with their own perspectives and strengths. It gives everyone a voice. These fresh perspectives give designers more information. Perspectives equip designers to make the right decisions on choices that have lasting impacts on other design, development, and marketing options down the road.<br/>設計協作吸引了許多人，每個人都有自己的觀點和優勢。 它給大家一個聲音。 這些新鮮的觀點為設計師提供了更多信息。 觀點使設計師能夠對其他設計有持久影響的選擇做出正確的決定，開發和營銷選擇。</p>
+<p>Collaboration with customers is as important as collaboration with other designers and team members. At Savvy, we keep our customer involved throughout the creation of their product. We take our time to explain options and have discussions with the customer to make sure we understand their thoughts.<br/>與客戶的協作和其他設計師和團隊的協作一樣重要。 在Savvy，我們讓客戶參與其產品的整個創作過程。 我們花些時間來解釋選項，並與客戶進行討論以確保我們了解他們的想法。</p>
+<p>This enables us to get buy-in from customers early on and work from clear beginnings and ends.Larger reveals aren't big surprises, and no one gets to the point where they're seeing work for the first time.<br/>這使我們能夠及早獲得客戶的認可，並從明確的起點和終點開始工作。更大的曝光量並不是什麼大驚喜，而且沒人會第一次看到他們的作品。</p>
+<p>Customer collaboration means arriving at a more defined product sooner, without costly back-stepping and unnecessary meetings.<br/>客戶協作意味著可以更快地獲得更清晰的產品，而無需付出高昂的代價和不必要的會議。</p>
+<p>It's easy to get caught up in your role and ignore the big picture. By involving more people earlier on, you're fostering closer connections with teammates and cultivating a shared responsibility and interest in the success of the product. You're creating a more open and transparent process, as well a more connected and invested team.<br/>很容易陷入角色而忽略全局。 通過儘早讓更多人參與進來，您可以與隊友建立更緊密的聯繫，並培養對產品成功的共同責任和興趣。 您正在創建一個更加開放和透明的流程，以及一個更緊密聯繫和投入的團隊。</p>
+<p>Customers come to us with complex challenges and goals. Not to mention, we continue to work with our customers for months, even years, and accumulate vast tomes of knowledge on past decisions, research, and other valuable context.<br/>客戶向我們提出了複雜的挑戰和目標。 更不用說，我們將繼續與客戶合作數月甚至數年，並在過去的決策，研究和其他有價值的背景下積累大量的知識。</p>
+<p>By adopting a context-first approach, you can make sure everyone is at the highest level of knowledge. This enables them to make the most informed decisions as they work on the product. To accomplish this, we keep everyone at Savvy updated on relevant information by bringing in all team members early, documenting and recording meetings, establishing some overlap, and treating the next team member in the process like a customer.<br/>通過採用上下文優先的方法，可以確保每個人都具有最高的知識水平。 這樣，他們就可以在產品上做出最明智的決定。 為了做到這一點，我們通過儘早召集所有團隊成員，記錄和記錄會議，建立一些重疊並將過程中的下一個團隊成員像客戶一樣，使Savvy的每個人都獲得有關相關信息的最新信息。</p>
+<p>Context is just as important on a case-by-case collaborative basis. Follow these guidelines to keep context first in collaboration:<br/>在個案協作的基礎上，上下文也同樣重要。 請遵循以下準則，以保持協作中的上下文優先：</p>
+<p>Provide context before showing your work. Chances are if your work is on the screen while you're giving context, you've lost your audience's attention.<br/>在顯示您的工作之前提供上下文。 在提供背景信息的情況下，如果您的作品出現在屏幕上，那麼您可能會失去聽眾的注意力。</p>
+<p>Describe the problem you're trying to solve or goal you're trying to achieve.<br/>描述您要解決的問題或要達到的目標。</p>
+<h4>page3</h4>
+<p>Present your work as it relates to the problem at hand. Explain your thinking and why you made certain decisions.<br/>介紹與當前問題相關的工作。 說明您的想法以及做出某些決定的原因。</p>
+<p>It isn't easy to put your work (and yourself) out there. Emotions can get in the way of providing open and honest feedback, especially when you're worried about hurting the other person's feelings.<br/>將您的工作（和您自己）放在那裡並不容易。 情緒會阻礙您提供坦誠的反饋，尤其是當您擔心會傷害對方的感覺時。</p>
+<p>That doesn't mean there's no place for emotion in collaboration. How something makes you feel is important in design. We think of and create solutions for people people who are emotional, and who use emotions in their decisions. Leaving emotion out of the conversation might short-change a potential idea or solution. At best, having only a pragmatic discussion around facts and data won't provide the full picture. At worst, it may be a red herring or provide a false narrative.<br/>這並不意味著在協作中沒有情感的位置。 在設計中，讓您感覺如何很重要。 我們為有情感並在決策中使用情感的人們思考並創建解決方案。 在對話中留下情感可能會縮短潛在的想法或解決方案。 充其量，僅就事實和數據進行務實的討論將無法提供全面的信息。 在最壞的情況下，它可能是鯡魚或提供虛假的敘述。</p>
+<p>At Savvy, we empower our team to be "fearless" about receiving feedback. This means letting go of any anxieties about being judged for what we create. It also means understanding that we are stronger together and stand a greater chance of creating something great. In being fearless, we better trust and empower each other to give honest and thoughtful feedback.<br/>在Savvy，我們使我們的團隊對收到反饋“無所畏懼”。 這意味著放開對我們所創造的東西進行判斷的任何焦慮。 這也意味著了解我們<br/>在一起變得更強大，更有機會創造偉大的事物。 在無所畏懼的情況下，我們會更好地相互信任和相互賦予能力，以提供誠實和周到的反饋。</p>
+<p>Our team also believes in being fearless about providing feedback. This means understanding the problem that needs solving as well as the customer's brand and goals. It also means asking lots of questions either to uncover relevant thoughts or to help guide decisions.<br/>我們的團隊還相信，不要害怕提供反饋。 這意味著要了解需要解決的問題以及客戶的品牌和目標。 這也意味著問很多問題，以發現相關的思想或幫助指導決策。</p>
+<p>Try presenting feedback in an exploratory and guiding manner, with the intent of building up andimproving the work rather than tearing it down.Tweet This<br/>嘗試以探索性和指導性的方式提出反饋意見，以期建立和改進工作而不是拆散工作。</p>
+<p>Your feedback should be constructive. Instead of saying you don't like something, frame your feedback to point back to the problem you're trying to help solve. Provide actionable steps on improving the work or at the very least the reasoning behind your thinking. And don't forget to express what you like and why.<br/>您的反饋意見應具有建設性。 與其說您不喜歡某些東西，不如說出您的反饋意見以指出您要幫助解決的問題。提供可行的步驟來改進工作，或者至少提供您思考背後的理由。 並且不要忘了表達您喜歡什麼以及為什麼。</p>
+<p>It's one thing to be open and accepting of collaborative feedback, another to parse those thoughts and use them as catalysts to spark your own. This is a more advanced skill that develops over time. One way to practice this is to become a better listener.<br/>開放並接受協作反饋是一回事，解析這些想法並將其用作催生您自己的想法是另一回事。 隨著時間的推移，這是一項更高級的技能。一種實踐方法是成為更好的聽眾。</p>
+<p>Often, during a conversation with others, we think more about what we are going to say next rather than what others are saying. This impacts the feedback process, especially in design, because we often know what we want to say before hearing another opinion or solution.<br/>通常，在與他人交談時，我們會更多地考慮接下來要說的內容，而不是別人在說什麼。這會影響反饋過程，尤其是在設計過程中，因為在聽到其他意見或解決方案之前，我們通常會知道我們要說的話。</p>
+<p>When you choose to listen first and react second, it allows you to fully understand the feedback someone else is presenting and sets you up to go deeper — what is the perspective they're using and the place they're coming from? Chances are this is a perspective you didn't consider during the creation process. By listening to and understanding the context and reasoning behind the feedback you're receiving, you're opening yourself to more ways of looking at, thinking of, and experiencing your design. You can then test these new perspectives against the challenges, goals, and use cases you're designing for to see if they better suit the user.<br/>當您選擇先聆聽然後再做出反應時，它可以讓您完全理解其他人的反饋，並讓您更深入地了解自己-他們使用的觀點是什麼以及來自何處？很有可能這是您在創建過程中未曾考慮過的觀點。通過聽取並理解所收到反饋背後的上下文和推理，您可以以更多的方式來審視，思考和體驗設計。然後，您可以針對要設計的挑戰，目標和用例來測試這些新觀點，以查看它們是否更適合用戶。</p>
+<p>It's easier to be more receptive of feedback when all collaborators practice active listening. Ultimately, the skill of giving great feedback comes from learning how to receive it. As we make an effort to be better listeners, we also find ourselves becoming more humble and, in our opinion,Finding and Using the Right Design Collaboration Tools.<br/>當所有協作者都在積極聆聽時，更容易接受反饋。 最終，提供良好反饋的技能來自學習如何獲得反饋。 當我們努力成為更好的傾聽者時，我們也發現自己變得越來越謙虛，並認為尋找和使用正確的設計協作工具</p>
+<br />電子書翻譯 << <a href='電子書翻譯.html'>Previous</a> <a href='IndustrialAndEngineeringProductDesignCollaboration.html'>Next</a> >> IndustrialAndEngineeringProductDesignCollaboration</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
