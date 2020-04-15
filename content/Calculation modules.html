@@ -154,21 +154,37 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">week << <a href='week.html'>Previous</a> <a href='week2.html'>Next</a> >> week2<br /><h1>week1</h1>
-<p><span>group2 組員</span><span>名單</span></p>
-<p><span>組(長):40723150         網站:<a href="https://s40723150.github.io/cd2020/content/index.html">https://s40723150.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723108           網站:<a href="https://s40723108.github.io/cd2020/content/index.html">https://s40723108.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723127           網站:<a href="https://s40723127.github.io/cd2020/content/index.html">https://s40723127.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723132           網站:<a href="https://s40723132.github.io/cd2020/content/index.html">https://s40723132.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723133           網站:<a href="https://s40723133.github.io/cd2020/content/index.html">https://s40723133.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723137           網站: <a href="https://s40723137.github.io/cd2020/content/index.html">https://s40723137.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723141           網站:<a href="https://s40723141.github.io/cd2020/content/index.html">https://s40723141.github.io/cd2020/content/index.html</a></span></p>
-<p><span>組員:40723143           網站:<a href="https://s40723143.github.io/cd2020/content/index.html">https://s40723143.github.io/cd2020/content/index.html</a></span></p>
-<p>組員:40723144           網站:<a href="https://s40723144.github.io/cd2020/content/index.html">https://s40723144.github.io/cd2020/content/index.html</a></p>
-<p>組員:40723147           網站:<a href="https://s40723147.github.io/cd2020/content/index.html">https://s40723147.github.io/cd2020/content/index.html</a></p>
-<p>組員:40723148           網站:<a href="https://s40723148.github.io/cd2020/content/index.html">https://s40723148.github.io/cd2020/content/index.html</a></p>
-<p></p>
-<br />week << <a href='week.html'>Previous</a> <a href='week2.html'>Next</a> >> week2</div>
+    <div id="tipue_search_content">場景&模型&環境 << <a href='場景&模型&環境.html'>Previous</a> <a href='編寫代碼.html'>Next</a> >> 編寫代碼<br /><h1>Calculation modules</h1>
+<p><span><big><big>Collision detection</big></big></span></p>
+<p><span></span></p>
+<p><span><big><big>Distance calculation</big></big></span></p>
+<p><span></span></p>
+<p><span><big><big>Inverse kinematics</big></big></span></p>
+<p><span></span></p>
+<p><span><big><big>Dynamics</big></big></span></p>
+<p>CoppeliaSim的動力學模塊當前支持下列四種不同的物理引擎。用戶在任何時候都可以根據自己的仿真需求自由地從一種發動機快速切換到另一種發動機。物理引擎支持如此多樣化的原因是，物理模擬是一項複雜的任務，可以通過不同程度的精度，速度或支持多種功能來實現：</p>
+<ul>
+<ul>
+<ul>
+<li>
+<p><a href="http://www.bulletphysics.org/">Bullet physics library</a><span>:</span></p>
+<p>一個開源物理引擎，具有3D碰撞檢測，剛體動力學和<span>soft body dynamics</span>（CoppeliaSim當前不支持該功能）。它用於遊戲和電影的視覺效果。它通常被視為遊戲物理引擎。</p>
+</li>
+<li>
+<p><span><a href="http://www.ode.org/">Open Dynamics Engine (ODE)</a><span>:</span></span></p>
+一個具有兩個主要組成部分的開源物理引擎：剛體動力學和碰撞檢測。它已在許多應用程序和遊戲中使用。它通常被視為遊戲物理引擎。</li>
+<li>
+<p><span><span><a href="https://www.cm-labs.com/vortex-studio/">VortexÂ® Studio</a><span>:<span> </span></span></span></span></p>
+非開源商業物理學引擎，可產生高保真物理模擬。 Vortex提供了大量物理屬性的實際參數（即對應於物理單位），使該引擎既逼真又精確。 Vortex主要用於高性能/高精度工業和研究應用。 CoppeliaSim的Vortex插件基於Vortex Studio，該插件要求每個用戶向CM Labs註冊以獲取免費許可證密鑰。</li>
+<li>
+<p><span><span><span><a href="http://www.newtondynamics.com/">Newton Dynamics</a><span>:<span> </span></span></span></span></span></p>
+Newton Dynamics是一個跨平台的逼真的物理模擬文庫。它實現了確定性求解器，它不是基於傳統的LCP或<a href="https://zh.wikipedia.org/wiki/%E8%BF%AD%E4%BB%A3">疊代</a>方法，而是分別具有兩者的穩定性和速度。這項功能使Newton Dynamics不僅成為遊戲的工具，而且還成為任何實時物理模擬的工具。當前的插件執行是BETA版本。</li>
+</ul>
+</ul>
+</ul>
+<p><span><big><big>Environment</big></big></span></p>
+<p>CoppeliaSim中的環境定義了屬於場景但不屬於場景物件的屬性和參數。保存模型時不保存環境屬性和參數，但只有保存場景則會</p>
+<br />場景&模型&環境 << <a href='場景&模型&環境.html'>Previous</a> <a href='編寫代碼.html'>Next</a> >> 編寫代碼</div>
         
     <!-- footer -->
       <div class="container">
