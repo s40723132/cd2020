@@ -510,6 +510,33 @@ Newton Dynamics是一個跨平台的逼真的物理模擬文庫。它實現了�
 <li><span>a </span><a href="https://www.coppeliarobotics.com/helpFiles/en/blueZeroPlugin.htm">BlueZero node</a> :</li>
 </ul>
 <h2><span>week6</span></h2>
+<h4>Simulation(模擬)</h4>
+<h4>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</h4>
+<p>可以使用<span>[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬</span>]或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
+<p> <img alt="" height="83" src="https://s40723132.github.io/cd2020ag2/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
+<p>.</p>
+<p><span><span>Internally(在內部)</span>,<span> </span><span>the<span> </span><span>simulator(模擬器)</span></span><span> </span>will use<span> </span><span>additional(額外)</span><span> </span><span>intermediate(中間) </span>states in order to<span> correctly(正確地) inform </span></span><span><a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm">scripts</a>(告知腳本)</span><span><span> </span>or programs about what will happen next. Following<span> </span><span>state diagram(狀態圖)</span><span> </span><span>illustrates(說明)</span><span> </span>the simulator's<span> </span><span>internal(內部) </span>states:</span></p>
+<p><span>在內部，<span>模擬器將使用其他中間狀態</span>，以正確告知腳本或程序接下來將發生的情況。<span> </span><span>以下<span>狀態圖說明了模擬器的內部狀態</span></span>：<br/></span></p>
+<p><span><img alt="" height="390" src="https://s40723132.github.io/cd2020ag2/images/ApplicationFrameHost_2020-04-08_11-35-37.png" width="533"/></span></p>
+<p>Scripts and programs should<span><span> </span>alwaysreact(總是反應)</span><span> </span>according to the current system call function and possibly the simulation state in order to<span> </span><span>behave correctly(正確運行)</span>. It is good practice to<span> </span><span>divide each(劃分每個)</span><span> </span>control code into<span> </span><span>at<span><span> </span>least(至少)</span></span><span> </span>4 system call functions (e.g. for<span><span> </span>non-threaded(非線性)<span> </span></span>child scripts):</p>
+<p><span>腳本和程序應始終根據當前系統調用功能以及可能的模擬狀態進行反應</span>，以便正確運行。 優良作法是<span>將每個控制代碼<span>至少分為4個系統調用函數</span></span>（例如，用於非線程子腳本）：</p>
+<ul>
+<li><strong><span>In</span><span><span>itialization(初始化)</span><span> </span>function:</span></strong><span> </span>sysCall_init: the function is called only when the script is<span><span> </span>initialized(初始化)</span>.</li>
+</ul>
+<p><strong><span>初始化函數：</span></strong>sysCall_init：僅在腳本初始化時才調用該函數。</p>
+<ul>
+<li><strong><span><span>Actuation(激活)</span><span> </span>function:<span> </span></span></strong>sysCall_actuation: the function is called when actuation should happen.</li>
+</ul>
+<p><strong><span>激活函數</span></strong>：sysCall_actuation：應在發生激活時調用該函數。</p>
+<ul>
+<li><strong><span><span>Sensing(感測)<span> </span></span>function:</span><span> </span></strong>sysCall_sensing: this function is called when sensing should happen.</li>
+</ul>
+<p><strong><span>感測功能：</span></strong>sysCall_sensing：應在感測發生時調用此函數。</p>
+<ul>
+<li><strong><span><span>Clean-up(清理)</span><span> </span>function:</span></strong><span> </span>sysCall_cleanup: the function is called just before the script is<span><span> </span>de-initialized(未初始化)</span><span> </span>(e.g. at simulation end, or when the script is<span> </span><span>destroyed(銷毀)</span>).</li>
+</ul>
+<p><strong><span>清理函數：</span></strong>sysCall_cleanup：該函數在腳本未初始化之前被調用（例如在模擬結束時或腳本被銷毀時）。</p>
+<p><big><big>Simulation loop</big></big></p>
 <p><span></span></p>
 <h2>week7</h2>
 <p><span></span></p>
