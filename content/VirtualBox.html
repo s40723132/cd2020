@@ -154,18 +154,258 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">紀錄 << <a href='紀錄.html'>Previous</a> <a href='四輪小車紀錄.html'>Next</a> >> 四輪小車紀錄<br /><h1>亂數分組紀錄</h1>
-<p>W2：<br/>相關資料尋找、查詢、閱讀<br/>簡易python撰寫 練習 運用 <br/>編寫亂數分組程序<br/>討論其關聯性及應用</p>
-<p><span>W3：<br/>製作相關內容整理<br/></span><span>編輯程序 流程最簡化<br/></span><span>PDF製作 編排整理網誌 Revral 撰寫</span></p>
-<p><span>W5：</span></p>
-<p><span>持續更新</span></p>
-<p><span>列舉往後目標及方向</span></p>
-<p><span></span>可攜系統紀錄</p>
-<p>W2：<br/>安裝 python, SciTE, Portablegit, msys2, <span>Tiny C Compiler, Jupyterlab, Fossil SCM, Leo Editor 和 Flutter 放入可攜系統(有先放先前的putty和ssh到測試是否可以順利使用ssh改版)。</span></p>
-<p><span>W3：<br/>配置webots到可攜系統上，測試msys2裡建立gcc編譯環境。</span></p>
-<p><span>W4：<br/>將 xelatex 配置到可攜系統上，完成測試msys2裡建立gcc編譯環境。<br/></span></p>
-<p><span><span>W5：<br/>將 CoppeliaSim 放到可攜系統上。將 leo 升級到6.2.1。<br/></span></span></p>
-<br />紀錄 << <a href='紀錄.html'>Previous</a> <a href='四輪小車紀錄.html'>Next</a> >> 四輪小車紀錄</div>
+    <div id="tipue_search_content">四輪小車零件 << <a href='四輪小車零件.html'>Previous</a> <br /><h1>VirtualBox</h1>
+<p>在VirtualBox→Files→Preferences<span>→Network<br/>新增一個網路設定，支援DHCP和IPV6</span></p>
+<p><img alt="" height="271" src="https://s40723150.github.io/cd2020/images/VirtualBox_Preference.png" width="450"/></p>
+<p>再到cd2020pj1的虛擬主機設定NAT的Port號</p>
+<p>IPv4設定：Guest IP是透過ifconfig查出來(IPv6的也是)</p>
+<p><img alt="" height="298" src="https://s40723150.github.io/cd2020/images/VirtualBox_IPv4.png" width="450"/></p>
+<p><span>IPv6設定</span></p>
+<p><span><img alt="" height="298" src="https://s40723150.github.io/cd2020/images/VirtualBox_IPv6.png" width="450"/></span></p>
+<p><span>Ubuntu 20.04的網路設定</span></p>
+<p><span><img caption="false" height="294" src="https://s40723150.github.io/cd2020/images/VirtualBox_Netsetting.png" width="500"/></span></p>
+<p><span>P.S.  Guest IP 的部分可以在虛擬主機開機的狀態下進行修改設定</span></p>
+<p><span>IP 查詢</span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_985761">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">ifconfig</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>若跳出尚未安裝net-tools的話請安裝</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_24173">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">sudo apt install net-tools</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>若在<strong>IPv6</strong>環境下有跳出網路錯誤</p>
+<ol>
+<li>IPv6環境設定是否正確<br/><br/><span>請到 /etc/netplan 目錄下檢查 00-installer-config.yaml 檔案內的設定</span><span></span><span><span><br/></span></span>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_380283">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/netplan</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi 00-installer-config.yaml</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<span>00-installer-config.yaml</span>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_302809">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain"># This is the network config written by 'subiquity'</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">network:</code></div>
+<div class="line number3 index2 alt2"><code class="html spaces">    </code><code class="html plain">ethernets:</code></div>
+<div class="line number4 index3 alt1"><code class="html spaces">        </code><code class="html plain">enpes3:</code></div>
+<div class="line number5 index4 alt2"><code class="html spaces">            </code><code class="html plain">dhcp4: true</code></div>
+<div class="line number6 index5 alt1"><code class="html spaces">            </code><code class="html plain">dhcp6: true</code></div>
+<div class="line number7 index6 alt2"><code class="html spaces">            </code><code class="html plain">nameservers:</code></div>
+<div class="line number8 index7 alt1"><code class="html spaces">                </code><code class="html plain">addresses:</code></div>
+<div class="line number9 index8 alt2"><code class="html spaces">                    </code><code class="html plain">- 2001:b000:168::1</code></div>
+<div class="line number10 index9 alt1"><code class="html spaces">    </code><code class="html plain">version: 2</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>編輯完成後:wq跳出編輯並儲存，並更新netplan設定</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_650969">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">sudo netplan apply</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+</li>
+<li>proxy問題<br/>請到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案，若沒有，請用新增(直接用vi編輯器開啟proxy.conf就會自動新增)<br/>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_53217">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/apt/apt.conf.d</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi proxy.conf</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>proxy.conf的檔案內容</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_343468">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br/>先增完內容後要更新apt<br/>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_413403">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">sudo apt update</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ol>
+<p>網路設定完成後可以啟動wsgi.py</p>
+<p>再用電腦上的網頁(不是虛擬主機的網頁)到 <a href="https://localhost:8443/%E7%9C%8B%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E9%80%A3%E4%B8%8A%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%88%90%E5%8A%9F%E9%80%A3%E4%B8%8A%E5%BE%8C%E5%B0%B1%E6%8F%9Bputty">https://localhost:8443/看是否成功連上，如果成功連上後就換putty</a></p>
+<h4>Putty設定</h4>
+<p>IPv4</p>
+<p>Host Name：localhost<br/>Port：22<br/>Connection type：SSH</p>
+<p><img alt="" height="449" src="https://s40723150.github.io/cd2020/images/putty_IPv4.png" width="450"/></p>
+<p>IPv6</p>
+<p><strong></strong><span>Host Name：::1</span><br/><span>Port：22</span><br/><span>Connection type：SSH</span></p>
+<p><img alt="" height="449" src="https://s40723150.github.io/cd2020/images/putty_IPv6.png" width="450"/></p>
+<p>X11(IPv4或IPv6設定都一樣)</p>
+<p>▣Enable X11 forwarding</p>
+<p>X display location：localhost:0.0</p>
+<p><img alt="" height="449" src="https://s40723150.github.io/cd2020/images/putty_X11.png" width="450"/></p>
+<h4>Xming</h4>
+<p>安裝<a href="https://sourceforge.net/projects/xming/files/latest/download">Xming</a></p>
+<p>直接安裝後搬移至可攜</p>
+<p>或是直接安裝在隨身碟成可攜</p>
+<p><img alt="" height="356" src="https://s40723150.github.io/cd2020/images/Xming.png" width="450"/></p>
+<p>安裝完成後執行XLaunch.exe，全部為預設設定。</p>
+<p>在putty執行xtrem看是否會成功跳出</p>
+<h4>File Manager</h4>
+<p>執行nautilus若無法執行，請安裝nautilus</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_828091">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">sudo apt install nautilus</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>安裝完成後再執行一次<span>nautilus，正常的話就會跳出FileManager</span></p>
+<h4><span>CoppeliaSim</span></h4>
+<p><span>到coppeliasim的目錄下開啟coppeliaSim.sh的檔案</span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_510290">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">./coppeliaSim.sh</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><br />四輪小車零件 << <a href='四輪小車零件.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
